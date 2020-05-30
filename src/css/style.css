@@ -1,0 +1,352 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    position: relative;
+}
+
+nav {
+    height: 50px;
+    background-color: #212121;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 70px;
+    margin: 0;
+    list-style: none;
+}
+
+.menu .menu_link {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.menu .menu_item {
+    border-right: 2px dotted black;
+    padding-right: 28px;
+}
+
+.menu li:last-child {
+    border-right: 0px;
+}
+
+.subheader {
+    position: absolute;
+    width: 100%;
+    height: 84px;
+    background-color: rgba(0,0,0, .6);
+}
+
+.subheader .subheader_logo {
+    display: block; /* Ссылка это строчный элемент на него margin не работает, поэтому поменяли display */
+    max-width: 100%;
+    margin-top: 16px;
+}
+
+/* Отдельно можно задать маргин непосредственно к img, но чтобы не раскрывать целый кусок кода, проще ссылке поменять display
+.subheader .subheader_logo .logo {
+    max-width: 100%;
+    margin-top: 16px;
+} */
+
+.subheader .subheader_official {
+    opacity: 0.5;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 300;
+    margin-top: 6px;
+}
+
+.subheader .subheader_call {
+    margin-top: 19px;
+    text-align: right;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.subheader .subheader_phone {
+    display: block;
+    margin-top: 8px;
+    text-align: right;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 12px;
+}
+
+.subheader .subheader_btn {
+    width: 172px;
+    height: 46px;
+    margin-top: 19px;
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, .0.12);
+    border: none;
+    border-radius: 4px;
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.promo {
+    min-height: 800px;
+    background: url(../img/bg/main_bg.png) center center/cover no-repeat;
+    padding: 151px 0 135px 0;
+}
+
+.promo .promo_header {
+    margin: 0;
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 60px;
+    text-align: center;
+}
+
+.promo_subheader {
+    margin: 0;
+    margin-top: 22px;
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 36px;
+    text-align: center;
+}
+
+.promo .promo_descr {
+    margin-top: 11px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+
+.promo .promo_btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 102px;
+    height: 63px;
+    width: 259px;
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, .0.12);
+    border: none;
+    border-radius: 4px;
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.reasons {
+    min-height: 900px;
+    padding: 71px 0 44px 0;
+}
+
+.reasons .benefits_btn {
+    display: block;
+    margin: 0 auto;
+    width: 112px;
+    height: 24px;
+    background-color: black;
+    border: none;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.reasons .eight_reasons {
+    margin-top: 36px;
+    color: #222222;
+    font-size: 38px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* .reasons .row .col-md-6 {
+    padding: 0 43px 0 35px;
+} */
+
+.reasons .row .reason_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 14px;
+    min-height: 162px;
+}
+
+.reasons .row .reason_block .rounded {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 26px;
+    min-width: 113px;
+    height: 113px;
+    border-radius: 100%;
+    background-color: #1eacc7;
+}
+
+.reasons .row .reason_block .reason_descr .reason_header {
+    color: #1eacc7;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.reasons .row .reason_block .reason_descr .reason_text {
+    text-align: justify;
+    color: #202020;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+}
+
+.app {
+    min-height: 865px;
+    padding: 48px 0 79px 0;
+    background-image: url(../img/bg/mob_app_bg.png);
+}
+
+.app .opportunities_btn {
+    display: block;
+    margin: 0 auto;
+    width: 112px;
+    height: 24px;
+    background-color: #000000;
+    border: none;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.app .app_header {
+    margin-top: 36px;
+    margin-bottom: 0;
+    color: #222222;
+    font-size: 38px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.app .app_subheader {
+    color: #222222;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.app .row .app_wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.app .row .app_card {
+    margin-top: 19px;
+    padding: 91px 0 35px 0;
+    width: 320px;
+    height: 280px;
+    background: url(../img/mob_app_cards/card_1.png) center center/cover no-repeat;
+}
+
+.app .row .app_card .rounded_black_btn {
+    margin: 0 auto;
+    margin-top: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 100%;
+    background-color: #000000;
+    border: none;
+}
+
+.app .row .app_card .app_card_text {
+    min-height: 76px;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* .card_1 {
+    background-image: url(../img/mob_app_cards/card_1.png) center center/cover no-repeat;
+} */
+
+.choice {
+    min-height: 498px;
+    background-color: #070716;
+    padding-top: 57px;
+}
+
+.choice .opportunities_white_btn {
+    display: block;
+    margin: 0 auto;
+    width: 112px;
+    height: 24px;
+    background-color: #ffffff;
+    border: none;
+    color: #070716;
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.choice .choice_header {
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.choice .choice_subheader {
+    text-align: center;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.choice_prius_wrapper {
+    position: relative;
+}
+
+.choice .uberx_car {
+    position: absolute;
+    margin-top: 37px;
+}
+
+.prius {
+    min-height: 397px;
+    background-image: url(../img/bg/mob_app_bg.png);
+}
+
+.prius .prius_text {
+    padding-top: 218px;
+    text-align: center;
+    color: #222222;
+    font-size: 17px;
+    font-weight: 300;
+}
