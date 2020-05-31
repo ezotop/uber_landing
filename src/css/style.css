@@ -80,7 +80,7 @@ nav {
 }
 
 .subheader .subheader_btn {
-    width: 172px;
+    width: 100%;
     height: 46px;
     margin-top: 19px;
     box-shadow: inset 0 -3px 0 rgba(0, 0, 0, .0.12);
@@ -254,15 +254,15 @@ nav {
 .app .row .app_wrapper {
     display: flex;
     justify-content: space-around;
-    margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 .app .row .app_card {
+    margin: 0 auto;
     margin-top: 19px;
     padding: 91px 0 35px 0;
     width: 320px;
     height: 280px;
-    background: url(../img/mob_app_cards/card_1.png) center center/cover no-repeat;
 }
 
 .app .row .app_card .rounded_black_btn {
@@ -288,9 +288,29 @@ nav {
     text-transform: uppercase;
 }
 
-/* .card_1 {
-    background-image: url(../img/mob_app_cards/card_1.png) center center/cover no-repeat;
-} */
+.app .row .app_wrapper .card_1 {
+    background: url(../img/mob_app_cards/card_1.png)
+}
+
+.app .row .app_wrapper .card_2 {
+    background: url(../img/mob_app_cards/card_2.png)
+}
+
+.app .row .app_wrapper .card_3 {
+    background: url(../img/mob_app_cards/card_3.png)
+}
+
+.app .row .app_wrapper .card_4 {
+    background: url(../img/mob_app_cards/card_4.png)
+}
+
+.app .row .app_wrapper .card_5 {
+    background: url(../img/mob_app_cards/card_5.png)
+}
+
+.app .row .app_wrapper .card_6 {
+    background: url(../img/mob_app_cards/card_6.png)
+}
 
 .choice {
     min-height: 498px;
@@ -336,11 +356,12 @@ nav {
 .choice .uberx_car {
     position: absolute;
     margin-top: 37px;
+    transform: translateX(191px);
 }
 
 .prius {
     min-height: 397px;
-    background-image: url(../img/bg/mob_app_bg.png);
+    background: url(../img/bg/mob_app_bg.png);
 }
 
 .prius .prius_text {
