@@ -340,57 +340,76 @@ nav
 		font-weight: 400
 		display: block
 		text-align: center
+		text-transform: uppercase
 
-footer
+.footer
 	min-height: 148px
 	padding-top: 14px
-	position: relative
-	.divide
+	a:hover
+		text-decoration: none
+	&_divider
 		height: 4px
 		width: 299px
 		margin: 0 auto
 		background-color: $main_color
-	.f_block
-		margin: 34px 23px 0 23px
+	&_wrapper
+		display: flex 
+		justify-content: space-between
+		align-items: flex-start
+		padding: 32px 23px 0 23px
+		&_wrapper > div 
+			width: 33%
+			&:nth-child(3)
+				display: flex 
+				justify-content: flex-end
+	&_social
+		width: 153px
 		display: flex
 		justify-content: space-between
-		&_social
-			width: 153px
+		&_item
+			width: 32px
+			height: 32px
+			border-radius: 100%
+			background-color: $color_choice
 			display: flex
-			justify-content: space-between
-		&_store
-			width: 295px
-	.f_menu
+			justify-content: center
+			align-items: center
+			i
+				color: #ffffff
+	&_links
 		width: 390px
-		position: absolute
-		top: 50px
-		left: 50%
-		transform: translateX(-50%)
-		&_top
-			display: flex
-			justify-content: space-around
-			a
-				color: $color_choice
+		&_main 
+			display: flex 
+			justify-content: space-between
+			padding: 0 10px
+			a 
+				color: #070716
 				font-size: 15px
 				font-weight: 300
 				text-transform: uppercase
-		&_btm
-			display: flex
+		&_sub 
+			display: flex 
 			justify-content: space-between
-			margin-top: 12px
-			a
+			margin-top: 10px
+			a 
 				color: #999999
 				font-size: 11px
 				font-weight: 300
 				text-transform: uppercase
-	.lang
-		margin-top: 88px
-		display: block
-		text-align: center
-		color: $main_color
-		font-size: 11px
-		font-weight: 400
-		text-transform: uppercase
+		&_lang
+			display: block
+			margin: 0 auto
+			color: $main_color
+			font-size: 11px
+			font-weight: 400
+			text-transform: uppercase
+			text-align: center
+			margin-top: 19px
+	/** &_mobile
+		width: 153px
+		display: flex
+		flex-wrap: wrap
+		justify-content: flex-end **/
 	.skyline
 		background-color: $color_choice
 		width: 100%
