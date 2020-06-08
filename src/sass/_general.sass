@@ -257,7 +257,7 @@ nav
 	position: relative
 	min-height: 895px
 	padding: 57px 0 138px 0
-	background: url('../img/bg/mob_app_bg.png') center (center / cover) no-repeat
+	background: url("../img/bg/mob_app_bg.png")  center (center / cover) no-repeat
 	z-index: -5
 	&_img 
 		position: relative
@@ -352,15 +352,15 @@ nav
 		display: flex
 		justify-content: space-between
 		align-items: flex-start
-		padding: 32px 23px 0 23px
-		div
+		padding: 32px 23px 31px 23px
+		&_box
 			width: 33%
 			&:nth-child(3)
 				display: flex
 				justify-content: flex-end
 	&_social
 		display: flex
-		justify-content: space-between
+		justify-content: flex-start
 		&_item
 			width: 32px
 			height: 32px
@@ -373,7 +373,6 @@ nav
 			i
 				color: #ffffff
 	&_links
-		width: 390px
 		&_main 
 			display: flex 
 			justify-content: space-between
@@ -384,14 +383,16 @@ nav
 				font-weight: 300
 				text-transform: uppercase
 		&_sub 
-			display: flex 
-			justify-content: space-between
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-around
 			margin-top: 10px
 			a 
 				color: #999999
 				font-size: 11px
 				font-weight: 300
 				text-transform: uppercase
+				margin-right: 5px
 		&_lang
 			display: block
 			margin: 0 auto
